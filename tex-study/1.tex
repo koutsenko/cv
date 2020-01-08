@@ -1,0 +1,29 @@
+% Документ создан на базе шаблона из курса https://www.coursera.org/learn/latex
+
+\documentclass[a4paper,12pt]{article}   % (обязательно) начало файла
+
+\usepackage{cmap}					    % поиск в PDF
+\usepackage[T2A]{fontenc}			    % кодировка
+\usepackage[utf8]{inputenc}			    % кодировка исходного текста
+\usepackage[english,russian]{babel}	    % локализация и переносы
+
+\title{1 Структура и ссылки}
+\author{Koutsenko Dmitry}
+\date{January 2020}
+
+\begin{document}                        % (обязательно) начало документа
+
+\maketitle
+
+\section{Параграф 1}
+
+\subsection{Подраздел 1}\label{label1}
+\subsection{Подраздел 2}\label{label2}
+\subsection{Подраздел 3}
+\subsection{Подраздел 4}
+
+Здесь ссылка на \ref{label1}, а еще есть ссылка на \ref{label2}
+
+\section{Параграф 2}
+
+\end{document}                          % (обязательно) конец документа
