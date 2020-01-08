@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1578489193 "/media/kds/Data/CV/main.tex" "/media/kds/Data/CV/main.pdf" "main" 1578489193
+["pdflatex"] 1578489483 "/media/kds/Data/CV/main.tex" "/media/kds/Data/CV/main.pdf" "main" 1578489506
   "/etc/texmf/web2c/texmf.cnf" 1578484674 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/kds/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1200.600pk" 1578489015 27004 79ba6a6a80520bd00299628b797f776e ""
   "/home/kds/.texlive2017/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1440.600pk" 1578489015 32576 303d8f485a1863be8ecafb43d7aa4913 ""
@@ -7,8 +7,8 @@
   "/home/kds/.texlive2017/texmf-var/fonts/tfm/lh/lh-t2a/larm1200.tfm" 1578489015 3240 c2435f2b5cd66d4930bc29b8df87967e ""
   "/home/kds/.texlive2017/texmf-var/fonts/tfm/lh/lh-t2a/larm1440.tfm" 1578489015 3256 3daaa33cf35cf3f354983aa3214ecd7f ""
   "/home/kds/.texlive2017/texmf-var/fonts/tfm/lh/lh-t2a/larm2074.tfm" 1578489015 3264 03c2b9e4787a40d3b9c197c38b93b558 ""
-  "/media/kds/Data/CV/main.aux" 1578489193 50 0fef47af310be850185ccf42e00e9455 ""
-  "/media/kds/Data/CV/main.tex" 1578489193 691 c8c870e477ec034ef4ff4a97daba2981 ""
+  "/media/kds/Data/CV/main.aux" 1578489483 50 0fef47af310be850185ccf42e00e9455 ""
+  "/media/kds/Data/CV/main.tex" 1578489506 691 c8c870e477ec034ef4ff4a97daba2981 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1480098701 1524 4414a8315f39513458b80dfc63bff03a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1480098701 1512 f21f83efb36853c0b70002322c1ab3ad ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm" 1480098701 1520 eccf95517727cb11801f4f1aee3a21b4 ""
@@ -44,12 +44,12 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1520210507 32485 c64754543d8ac501bea6e75e209ea521 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1520210507 32485 c64754543d8ac501bea6e75e209ea521 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1578489009 128341 7ee7a3ef48a5500fcd3789b37053b35d ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1578489010 1007758 e27218f10ba511df2803cda89864b182 ""
-  "main.aux" 1578489193 50 0fef47af310be850185ccf42e00e9455 ""
-  "main.tex" 1578489193 691 c8c870e477ec034ef4ff4a97daba2981 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1578489471 1008774 5cbf1ccba8eb42a288979aaf4b4191d9 ""
+  "main.aux" 1578489483 50 0fef47af310be850185ccf42e00e9455 ""
+  "main.tex" 1578489506 691 c8c870e477ec034ef4ff4a97daba2981 ""
   (generated)
   "main.aux"
-  "main.log"
   "/media/kds/Data/CV/main.pdf"
   "main.pdf"
   "/media/kds/Data/CV/main.log"
+  "main.log"
