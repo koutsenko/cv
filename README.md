@@ -16,6 +16,10 @@
 4. &nbsp; ...
 5. &nbsp; Profit!
 
-## Альтернативы
+## Дополнительные инструкции
+
+* https://www.coursera.org/learn/latex/supplement/yz6q1/proghrammnoie-obiespiechieniie-linux
+
+## Онлайн альтернативы
 
 Есть еще популярный онлайн редактор overleaf.com (бывший writelatex.com), но для синхронизации с гитом нужна платная подписка (заплатить, стать волонтером или насобирать рефералов).
