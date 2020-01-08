@@ -1,8 +1,17 @@
-\documentclass[a4paper,12pt]{article} % (Обязательно) начало файла
+\documentclass[a4paper,12pt]{article}   % (обязательно) начало файла
+
+\usepackage{cmap}					    % поиск в PDF
+\usepackage[T2A]{fontenc}			    % кодировка
+\usepackage[utf8]{inputenc}			    % кодировка исходного текста
+\usepackage[english,russian]{babel}	    % локализация и переносы
+
 \title{Hello world, LaTeX}
 \author{Koutsenko Dmitry}
 \date{January 2020}
-\begin{document} % (Обязательно) начало документа
+
+\begin{document}                        % (обязательно) начало документа
+
 \maketitle
-Some basic Hello world! $2\times2=4$, $2^2=4$
-\end{document} % (Обязательно) конец документа
+Привет, мир! $2\times2=4$, $2^2=4$
+
+\end{document}                          % (обязательно) конец документа
