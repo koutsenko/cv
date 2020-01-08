@@ -4,9 +4,9 @@
 
 1. &nbsp; Установить расширение LaTeX Workshop
 
-2. &nbsp; Установить LaTeX, сборщик PDF, поддержку кириллицы, автоформаттер и perl-либы к нему:
+2. &nbsp; Установить LaTeX, сборщик, кириллицу, поддержку icomma, автоформаттер и perl-либы к нему:
 
-   `sudo apt install texlive latexmk texlive-lang-cyrillic texlive-extra-utils`
+   `sudo apt install texlive latexmk texlive-lang-cyrillic texlive-latex-extra texlive-extra-utils`
 
    `cpan Log::Log4perl`
 

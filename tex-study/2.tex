@@ -1,0 +1,47 @@
+% Документ создан на базе шаблона из курса https://www.coursera.org/learn/latex
+
+\documentclass[a4paper,12pt]{article}                       % (обязательно) начало файла
+
+\usepackage{cmap}					                        % поиск в PDF
+\usepackage[T2A]{fontenc}			                        % кодировка
+\usepackage[utf8]{inputenc}			                        % кодировка исходного текста
+\usepackage[english,russian]{babel}	                        % локализация и переносы
+
+% Дополнительно для математики
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools}      % AMS расширения от Американского математического общества
+\usepackage{mathtext}                                       % русские буквы в формулах
+\usepackage{icomma}                                         % умная запятая - $0,2$ число, $0, 2$ перечисление
+\usepackage{euscript}                                       % шрифт Эвклид
+\usepackage{mathrsfs}                                       % красивый мат. шрифт
+\usepackage{leqno}                                          % нумерация формул слева
+\mathtoolsset{showonlyrefs=true}                            % показывать номера только у тех формул, на которые есть \eqref{} в тексте
+
+\title{2 Математика в \LaTeX{}}
+\author{Koutsenko Dmitry}
+\date{\today}
+
+\begin{document}                                            % (обязательно) начало документа
+
+\maketitle
+
+Привет, \LaTeX{}!
+
+- десятичная дробь: $0,2$
+
+- перечисление: $0, 2$
+
+- обычная формула: $2 + 2 = 4$
+
+- формула в строке (авт. перенос): йцукенг1йцукенг2йцукенг3йцукенг4йцукенг5йцукенг6йцукенг7йцукенг8$1+2+3+4+5+6$йцукенг9
+
+- выключная формула: \[2 + 2 = 4\]
+
+- выключная формула с меткой
+
+\begin{equation}\label{eq:mrmc}
+    MR=MC
+\end{equation}
+
+А это какой-то текст со ссылкой на формулу \eqref{eq:mrmc} на странице \pageref{eq:mrmc}, которая выражает какую-то взаимосвязь.
+
+\end{document}                                              % (обязательно) конец документа
