@@ -1,0 +1,92 @@
+% Документ создан на базе шаблона из курса https://www.coursera.org/learn/latex
+
+\documentclass[a4paper,12pt]{article}                       % (обязательно) начало файла
+
+\usepackage{cmap}					                        % поиск в PDF
+\usepackage[T2A]{fontenc}			                        % кодировка
+\usepackage[utf8]{inputenc}			                        % кодировка исходного текста
+\usepackage[english,russian]{babel}	                        % локализация и переносы
+
+% Дополнительно для математики
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools}      % AMS расширения от Американского математического общества
+\usepackage{mathtext}                                       % русские буквы в формулах
+\usepackage{icomma}                                         % умная запятая - $0,2$ число, $0, 2$ перечисление
+\usepackage{euscript}                                       % шрифт Эвклид
+\usepackage{mathrsfs}                                       % красивый мат. шрифт
+\usepackage{leqno}                                          % нумерация формул слева
+% \mathtoolsset{showonlyrefs=true}                            % показывать номера только у тех формул, на которые есть \eqref{} в тексте
+
+% Исправляем отсутствие отступа у первой строки (под)раздела / (sub)section
+\usepackage{indentfirst}
+
+% Своя команда
+\DeclareMathOperator{\sgn}{\mathop{sgn}}
+
+\title{5 Математика в \LaTeX{} - многострочные формулы}
+\author{Koutsenko Dmitry}
+\date{\today}
+
+\begin{document}                                            % (обязательно) начало документа
+
+\maketitle
+
+\section{Формулы в несколько строк}
+
+Многоточие
+\[ 1 + 2 + 3 + \dots + 99 + 100 = 5050 \]
+
+Многострочное окружение с переносами
+\begin{multline}
+    1 + 2 + 3 + 4 + 5 + 6 + 7 + \dots + \\
+    + 16 + 17 + 18 + 19 + 20 + 21 + 22 + 23 + 24 + 25 + \dots + \\
+    \dots + 99 + 100 = 5050
+\end{multline}
+
+Несколько формул
+\begin{align}
+    2 \times 2 = 4                      \\
+    1 + 2 + 3 + \dots + 99 + 100 = 5050 \\
+    10 \times 3 = 30
+\end{align}
+
+Несколько формул выравнены по знаку равно
+\begin{align}
+    2 \times 2                   & = 4    \\
+    1 + 2 + 3 + \dots + 99 + 100 & = 5050 \\
+    10 \times 3                  & = 30
+\end{align}
+
+Несколько формул выравнены по знаку равно, есть второй столбец
+\begin{align}
+    2 \times 2               & = 4    & 1 \times 2 & = 2 \\
+    1 + 2 + \dots + 99 + 100 & = 5050 & 2 \times 2 & = 4 \\
+    10 \times 3              & = 30   & 3 \times 2 & = 6
+\end{align}
+
+Несколько формул, у них единый номер
+\begin{equation}
+    \begin{aligned}
+        2 \times 2               & = 4    & 1 \times 2 & = 2 \\
+        1 + 2 + \dots + 99 + 100 & = 5050 & 2 \times 2 & = 4 \\
+        10 \times 3              & = 30   & 3 \times 2 & = 6
+    \end{aligned}
+\end{equation}
+
+Система уравнений, фигурная скобка только слева
+\[\left\{
+    \begin{aligned}
+        2 \times 2               & = 4    \\
+        1 + 2 + \dots + 99 + 100 & = 5050 \\
+        10 \times 3              & = 30
+    \end{aligned}\right. % Точка это фантомная скобка.
+\]
+
+Модуль числа (скобки - способ 2)
+\[
+    |x| = \begin{cases}
+        x,  & \text{если } x \ge 0 \\
+        -x, & \text{если } x < 0
+    \end{cases}
+\]
+
+\end{document}                                              % (обязательно) конец документа
