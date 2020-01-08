@@ -1,0 +1,84 @@
+% Документ создан на базе шаблона из курса https://www.coursera.org/learn/latex
+
+\documentclass[a4paper,12pt,leqno]{article}                 % (обязательно) начало файла, номера слева
+
+\usepackage{cmap}					                        % поиск в PDF
+\usepackage[T2A]{fontenc}			                        % кодировка
+\usepackage[utf8]{inputenc}			                        % кодировка исходного текста
+\usepackage[english,russian]{babel}	                        % локализация и переносы
+
+% Дополнительно для математики
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools}      % AMS расширения от Американского математического общества
+\usepackage{mathtext}                                       % русские буквы в формулах
+\usepackage{icomma}                                         % умная запятая - $0,2$ число, $0, 2$ перечисление
+\usepackage{euscript}                                       % шрифт Эвклид
+\usepackage{mathrsfs}                                       % красивый мат. шрифт
+\usepackage{leqno}                                          % нумерация формул слева
+\mathtoolsset{showonlyrefs=true}                            % показывать номера только у тех формул, на которые есть \eqref{} в тексте
+
+% Исправляем отсутствие отступа у первой строки (под)раздела / (sub)section
+\usepackage{indentfirst}
+
+% Своя команда
+\DeclareMathOperator{\sgn}{\mathop{sgn}}
+
+\title{6 Математика в \LaTeX{} - матрицы}
+\author{Koutsenko Dmitry}
+\date{\today}
+
+\begin{document}                                            % (обязательно) начало документа
+
+\maketitle
+
+\section{Матрицы}
+
+Матрица с круглыми скобками
+\[
+    \begin{pmatrix}
+        a_{11} & a_{12} & a_{13} \\
+        a_{21} & a_{22} & a_{23} \\
+        a_{31} & a_{32} & a_{33}
+    \end{pmatrix}
+\]
+
+Матрица с прямыми скобками
+\[
+    \begin{vmatrix}
+        a_{11} & a_{12} & a_{13} \\
+        a_{21} & a_{22} & a_{23} \\
+        a_{31} & a_{32} & a_{33}
+    \end{vmatrix}
+\]
+
+Матрица со скобками
+\[
+    \begin{bmatrix}
+        a_{11} & a_{12} & a_{13} \\
+        a_{21} & a_{22} & a_{23} \\
+        a_{31} & a_{32} & a_{33}
+    \end{bmatrix}
+\]
+
+Выражение с номером (скрытым из-за showonlyrefs)
+\begin{align}
+    1+1=2
+\end{align}
+
+Выражение без номера
+\begin{align*}
+    1+1=2
+\end{align*}
+
+Выражение с заданным номером (скрытым из-за showonlyrefs)
+\begin{align}
+    1+1=2 \tag{S1}
+\end{align}
+
+Выражение с заданным номером, на который можно сослаться
+\begin{align}
+    1+1=2 \tag{S2} \label{eq:sum}
+\end{align}
+
+Ссылка на \eqref{eq:sum}, в котором что-то интересное
+
+\end{document}                                              % (обязательно) конец документа
