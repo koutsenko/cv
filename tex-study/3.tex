@@ -1,0 +1,54 @@
+% Документ создан на базе шаблона из курса https://www.coursera.org/learn/latex
+
+\documentclass[a4paper,12pt]{article}                       % (обязательно) начало файла
+
+\usepackage{cmap}					                        % поиск в PDF
+\usepackage[T2A]{fontenc}			                        % кодировка
+\usepackage[utf8]{inputenc}			                        % кодировка исходного текста
+\usepackage[english,russian]{babel}	                        % локализация и переносы
+
+% Дополнительно для математики
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools}      % AMS расширения от Американского математического общества
+\usepackage{mathtext}                                       % русские буквы в формулах
+\usepackage{icomma}                                         % умная запятая - $0,2$ число, $0, 2$ перечисление
+\usepackage{euscript}                                       % шрифт Эвклид
+\usepackage{mathrsfs}                                       % красивый мат. шрифт
+\usepackage{leqno}                                          % нумерация формул слева
+\mathtoolsset{showonlyrefs=true}                            % показывать номера только у тех формул, на которые есть \eqref{} в тексте
+
+% Исправляем отсутствие отступа у первой строки (под)раздела / (sub)section
+\usepackage{indentfirst}
+
+\title{3 Математика в \LaTeX{} - формулы}
+\author{Koutsenko Dmitry}
+\date{\today}
+
+\begin{document}                                            % (обязательно) начало документа
+
+\maketitle
+
+\section{Нюансы работы с формулами}
+
+\subsection{Дроби}
+
+Инлайн (мелкая дробь) $\frac{3}{6} = 0,5$
+
+С выключкой \[\frac{3}{6} = 0,5\]
+
+С выключкой и дополнительным этажом дроби (мелкий) \[\frac{1+\frac{4}{2}}{6} = 0,5\]
+
+С выключкой и дополнительным этажом дроби (обычный) \[\frac{1+\dfrac{4}{2}}{6} = 0,5\]
+
+\subsection{Скобки}
+
+Автовысота скобок \[ (2+3) \times 5 = 25\]
+
+Автовысота скобок (не очень) \[ (2+\frac{9}{3}) \times 5 = 25\]
+
+Ручная высота скобок \[ \left(2+\frac{9}{3}\right) \times 5 = 25\]
+
+Квадратные скобки \[ [2+3] \]
+
+Фигурные скобки (экранировать слэшом) \[ \{2+3\} \]
+
+\end{document}                                              % (обязательно) конец документа
