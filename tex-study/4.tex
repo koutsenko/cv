@@ -1,0 +1,75 @@
+% Документ создан на базе шаблона из курса https://www.coursera.org/learn/latex
+
+\documentclass[a4paper,12pt]{article}                       % (обязательно) начало файла
+
+\usepackage{cmap}					                        % поиск в PDF
+\usepackage[T2A]{fontenc}			                        % кодировка
+\usepackage[utf8]{inputenc}			                        % кодировка исходного текста
+\usepackage[english,russian]{babel}	                        % локализация и переносы
+
+% Дополнительно для математики
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools}      % AMS расширения от Американского математического общества
+\usepackage{mathtext}                                       % русские буквы в формулах
+\usepackage{icomma}                                         % умная запятая - $0,2$ число, $0, 2$ перечисление
+\usepackage{euscript}                                       % шрифт Эвклид
+\usepackage{mathrsfs}                                       % красивый мат. шрифт
+\usepackage{leqno}                                          % нумерация формул слева
+\mathtoolsset{showonlyrefs=true}                            % показывать номера только у тех формул, на которые есть \eqref{} в тексте
+
+% Исправляем отсутствие отступа у первой строки (под)раздела / (sub)section
+\usepackage{indentfirst}
+
+% Своя команда
+\DeclareMathOperator{\sgn}{\mathop{sgn}}
+
+\title{4 Математика в \LaTeX{} - функции}
+\author{Koutsenko Dmitry}
+\date{\today}
+
+\begin{document}                                            % (обязательно) начало документа
+
+\maketitle
+
+\section{Функции}
+
+Синус \[ \sin x = 5 \]
+
+Логарифм \[ \ln x = 5 \]
+
+Моя команда \[ \sgn x = 5 \]
+
+\section{Символы}
+
+Не равно \[ 2\times 2 \ne 5 \]
+
+Пересечение множеств \[ A \cap B \]
+
+Объединение множеств \[ A \cup B \]
+
+\section{Диакритические знаки}
+
+Черта над \[ \bar x = 2 \]
+
+Тильда \[ \tilde y = 3 \]
+
+Линия над \[ \overline{12345xyz} \]
+
+Широкая тильда \[ \widetilde{12345xyz} \]
+
+\section{Буквы других алфавитов}
+
+Тангенс альфа \[ \tg \alpha = 1 \]
+
+Тангенс фи \[ \tg \phi = 1 \]
+
+Заглавная фи \[ \Phi \]
+
+Эпсилон \[ \epsilon \]
+
+Русский эпсилон \[ \varepsilon \]
+
+Русский фи \[ \varphi \]
+
+% TODO как написать заглавный русский фи? Он вообще есть?
+
+\end{document}                                              % (обязательно) конец документа
