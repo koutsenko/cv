@@ -1,0 +1,137 @@
+% Документ создан на базе шаблона из курса https://www.coursera.org/learn/latex
+
+\documentclass[a4paper,12pt]{article}                       % (обязательно) начало файла
+
+\usepackage{cmap}					                        % поиск в PDF
+\usepackage[T2A]{fontenc}			                        % кодировка
+\usepackage[utf8]{inputenc}			                        % кодировка исходного текста
+\usepackage[english,russian]{babel}	                        % локализация и переносы
+\usepackage{graphicx}                                       % поддержка изображений
+\usepackage{array}                                          % чтобы работал extrarowheight
+\usepackage{tabularx}                                       % чтобы работал tabularx
+\usepackage{tabulary}                                       % чтобы работал tabulary
+\graphicspath{{images/}}                                    % путь к изображениям
+
+% Исправляем отсутствие отступа у первой строки (под)раздела / (sub)section
+\usepackage{indentfirst}
+
+\title{7 Изображения и размеры}
+\author{Koutsenko Dmitry}
+\date{\today}
+
+\begin{document}                                            % (обязательно) начало документа
+
+\maketitle
+
+\section{Картинки}
+
+\subsection{Вектор}
+
+Просто картинка\\
+\includegraphics{7-image.pdf}
+
+Картинка по центру\\
+\[ \includegraphics{7-image.pdf} \]
+
+Просто картинка увеличенная в 2 раза\\
+\includegraphics[scale=2]{7-image.pdf}
+
+Просто картинка шириной 5 см\\
+\includegraphics[width=5cm]{7-image.pdf}
+
+Просто картинка, ширина 5, высота 10\\
+\includegraphics[width=5cm,height=10cm]{7-image.pdf}
+
+Картинка, ширина 2, высота 10, пропорциональная\\
+\includegraphics[width=2cm,height=10cm,keepaspectratio]{7-image.pdf}
+
+\subsection{Растр}
+
+Просто картинка\\
+\includegraphics{7-image.png}
+
+Просто картинка шириной в текст (ширина страницы минус поля)\\
+\includegraphics[width=\textwidth]{7-image.png}
+
+Картинка шириной в страницу\\
+\includegraphics[width=\paperwidth]{7-image.png}
+
+Картинка шириной в полстраницы\\
+\includegraphics[width=0.5\paperwidth]{7-image.png}
+
+\section{Таблицы}
+
+
+Таблица, колонки выравнены по центру и разделены верт. линиями
+
+\begin{tabular}{c|c|c}
+    1 & 2  & 3 \\
+    2 & 4  & 5 \\
+    3 & 67 & 5
+\end{tabular}
+
+Таблица, колонки выравнены по-разному
+
+\begin{tabular}{lrc}
+    1 & 2  & 3 \\
+    2 & 4  & 5 \\
+    3 & 67 & 5
+\end{tabular}
+
+Таблица с горизонтальной линией-разделителем
+
+\begin{tabular}{lll}
+    1 & 2  & 3 \\
+    \hline
+    2 & 4  & 5 \\
+    3 & 67 & 5
+\end{tabular}
+
+Таблица с разделителями
+
+\begin{tabular}{|l|l|l|}
+    \hline
+    1 & $2\times2=4$ & 3 \\
+    \hline
+    2 & 4            & 5 \\
+    3 & 67           & 5 \\
+    \hline
+\end{tabular}
+
+Таблица с многострочными ячейками
+
+% Глобальный паддинг столбца сверху? 
+% \setlength{\extrarowheight}{6mm}
+% FIXME Не получилось применить выборочно, т.е. выставить потом обратно в 0
+
+\setlength{\extrarowheight}{6mm}
+\begin{tabular}{|p{4cm}|l|l|}
+    \hline
+    1450934059 30454595 83405830 9839058 430 9 & $2\times2=4$                 & 3           \\ [0mm]
+    \hline
+    \[ 2\times2=4 \]                           & $\frac{6}{3}=2$              & Адаптивный  \\
+    \hline
+    \[ 2\times2=4 \]                           & $\displaystyle\frac{6}{3}=2$ & Нормальный  \\
+    \hline
+    3                                          & 67                           & 20mm высота \\ [20mm]
+    \hline
+\end{tabular}
+
+Таблица с автоподстройкой ширины столбца по тексту
+
+\begin{tabularx}{\textwidth}{|X|X|X|}
+    \hline
+    1450934059 30454595 83405830 9839058 430 9 & Какой-то текст покороче & А вот это очень очень длинный текст текстище \\
+    \hline
+\end{tabularx}
+
+Таблица с автоподстройкой ширины столбца чтобы была оптимальная высота строки
+
+\begin{tabulary}{\textwidth}{|C|J|R|}
+    \hline
+    1450934059 30454595 83405830 9839058 430 9 & Какой-то текст покороче & А вот это очень очень длинный текст текстище \\
+    \hline
+\end{tabulary}
+
+
+\end{document}                                              % (обязательно) конец документа
