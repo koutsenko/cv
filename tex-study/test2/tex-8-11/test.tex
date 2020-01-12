@@ -1,0 +1,30 @@
+\documentclass[a4paper,12pt]{article}
+\title{Рисунок}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{indentfirst}
+
+\usepackage{graphicx}
+
+
+\usepackage{caption}
+\captionsetup{labelsep=period}
+
+
+\begin{document}
+
+\section*{Рисунок}
+
+На рис. \ref{squares} изображены два квадрата: красный и черный.
+
+\begin{figure}[bhtp]
+\centering
+\includegraphics{figure.pdf}
+\caption{Квадраты}\label{squares}
+\end{figure}
+
+Прекрасный рисунок!
+
+\end{document}
