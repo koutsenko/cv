@@ -1,0 +1,43 @@
+% Документ создан на базе шаблона из курса https://www.coursera.org/learn/latex
+
+\documentclass[a4paper,12pt]{article}                       % (обязательно) начало файла
+
+\usepackage{cmap}					                        % поиск в PDF
+\usepackage[T2A]{fontenc}			                        % кодировка
+\usepackage[utf8]{inputenc}			                        % кодировка исходного текста
+\usepackage[english,russian]{babel}	                        % локализация и переносы
+\usepackage{multirow}                                       % поддержка слияния строк
+\usepackage{indentfirst}                                    % отступ первой строки (под)раздела / (sub)section
+
+\title{8 Плавающие таблицы}
+\author{Koutsenko Dmitry}
+\date{\today}
+
+\begin{document}                                            % (обязательно) начало документа
+
+\maketitle
+
+\section{Плавающие объекты}
+
+Смотри таблицу \ref{tab:mytab}.
+
+\begin{table}[!h]
+    \begin{center}
+        \caption[Краткий заголовок]{Длинный заголовок} \label{tab:mytab}
+        \begin{tabular}{|c|c|c|c|c|c|}
+            \hline
+            1                              & 2 & \multicolumn{2}{|c|}{Слияние столбцов 3, 4} & 5     \\
+            \cline{1-3}
+            1                              & 2 & 3                                           & 4 & 5 \\
+            \hline
+            \multirow{2}{*}{Две строки 1 } & 2 & 3                                           & 4 & 5 \\
+            \cline{2-5}
+                                           & 2 & 3                                           & 4 & 5 \\
+            \hline
+            1                              & 2 & 3                                           & 4 & 5 \\
+            \hline
+        \end{tabular}
+    \end{center}
+\end{table}
+
+\end{document}                                              % (обязательно) конец документа
