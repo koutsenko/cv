@@ -1,0 +1,74 @@
+% Документ создан на базе шаблона из курса https://www.coursera.org/learn/latex
+
+\documentclass[a4paper,12pt]{article}                       % (обязательно) начало файла
+
+\usepackage{cmap}					                        % поиск в PDF
+\usepackage[T2A]{fontenc}			                        % кодировка
+\usepackage[utf8]{inputenc}			                        % кодировка исходного текста
+\usepackage[english,russian]{babel}	                        % локализация и переносы
+\usepackage{multirow}                                       % поддержка слияния строк
+\usepackage{indentfirst}                                    % отступ первой строки (под)раздела / (sub)section
+\usepackage{longtable}                                      % многостраничные таблицы
+
+\title{9 Многостраничные таблицы}
+\author{Koutsenko Dmitry}
+\date{\today}
+
+\begin{document}                                            % (обязательно) начало документа
+
+\maketitle
+
+\begin{longtable}{|c|c|c|c|}
+    \caption{Заголовок большой таблицы.}                          \\
+    \hline
+    \textbf{RND1} & \textbf{RND2} & \textbf{RND3} & \textbf{RND4} \\
+    \hline
+    \endfirsthead
+    \hline
+    RND1          & RND2          & RND3          & RND 4         \\ \hline
+    \endhead
+    \hline
+    \multicolumn{4}{r}{продолжение следует\ldots}\
+    \endfoot
+    \hline
+    \endlastfoot
+
+    col1          & col2          & col3          & col4          \\
+    col1          & col2          & col3          & col4          \\
+    col1          & col2          & col3          & col4          \\
+    col1          & col2          & col3          & col4          \\
+    col1          & col2          & col3          & col4          \\
+    col1          & col2          & col3          & col4          \\
+    col1          & col2          & col3          & col4          \\
+    col1          & col2          & col3          & col4          \\
+    col1          & col2          & col3          & col4          \\
+    col1          & col2          & col3          & col4          \\
+    col1          & col2          & col3          & col4          \\
+    col1          & col2          & col3          & col4          \\
+    col1          & col2          & col3          & col4          \\
+    col1          & col2          & col3          & col4          \\
+    col1          & col2          & col3          & col4          \\
+    col1          & col2          & col3          & col4          \\
+    col1          & col2          & col3          & col4          \\
+    col1          & col2          & col3          & col4          \\
+    col1          & col2          & col3          & col4          \\
+    col1          & col2          & col3          & col4          \\
+    col1          & col2          & col3          & col4          \\
+    col1          & col2          & col3          & col4          \\
+    col1          & col2          & col3          & col4          \\
+    col1          & col2          & col3          & col4          \\
+    col1          & col2          & col3          & col4          \\
+    col1          & col2          & col3          & col4          \\
+    col1          & col2          & col3          & col4          \\
+    col1          & col2          & col3          & col4          \\
+    col1          & col2          & col3          & col4          \\
+    col1          & col2          & col3          & col4          \\
+    col1          & col2          & col3          & col4          \\
+    col1          & col2          & col3          & col4          \\
+    col1          & col2          & col3          & col4          \\
+    col1          & col2          & col3          & col4          \\
+    col1          & col2          & col3          & col4          \\
+    col1          & col2          & col3          & col4          \\
+\end{longtable}
+
+\end{document}                                              % (обязательно) конец документа
