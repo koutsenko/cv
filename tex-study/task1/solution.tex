@@ -1,30 +1,52 @@
 \documentclass[a4paper,12pt]{article}
 
 % Preamble
-\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
 \usepackage[english,russian]{babel}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
 \usepackage{indentfirst}
-% Preamble
+\usepackage[T2A]{fontenc}
+\usepackage{tabularx}
+\usepackage{textcomp}
+\usepackage{upgreek}
+\graphicspath{{images/}}                                   
+\newcommand{\hdotsfive}{. . . . .}
+%Preamble
 
 \begin{document}
 
-\noindent 
-empty 
+\noindent
 
-Пусть фиг. 21 представляет положения Солнца S, Земли T и Луны L, и пусть (.) есть центр тяжести Земли и Луны. Делаем следующие обнозначения:
+\textsection $ $ \textbf{2.} Пусть фиг. 21 представляет положения Солнца \textit{S}, Земли \textit{T} и Луны \textit{L}, и пусть $\Theta$ есть центр тяжести Земли и Луны. Делаем следующие обозначения:
 
-Масса Солнца S
-? Земли T
-? Луны L
+\begin{center}
+    \begin{tabular}{clrl}
+        Масса           & Солнца & \hdotsfive & \textit{S} \\
+        \guillemotright & Земли  & \hdotsfive & \textit{T} \\
+        \guillemotright & Луны   & \hdotsfive & \textit{L}
+    \end{tabular}
+\end{center}
 
 Расстояние:
-S(.) = p1, ST = p2, SL = p2, TL = r
+\begin{equation*}
+    \textit{S}\Theta = \uprho; \textit{ST} = \uprho_1; \textit{SL} = \uprho_2; \textit{TL} = \textit{r}\\
+\end{equation*}
 
-Тогда будет:
-T(.) = r2 = L / T+L * r
-L(.) = r2 = T / T+L r
+\noindentтогда будет:
+\begin{equation}
+    \begin{aligned}
+        \textit{T}\Theta & = \textit{r}_1 = \frac{\textit{L}}{\textit{T + L}} \cdot \textit{r} \\
+        \textit{L}\Theta & = \textit{r}_2 = \frac{\textit{T}}{\textit{T + L}} \textit{r}
+    \end{aligned}
+\end{equation}
 
-Составим теперь выражения ускорений, которые эти тела сообщают друг друг.
+Составим теперь выражения ускорений, которые эти тела сообщают друг другу.
+
+\begin{center}
+    \includegraphics{21.png}
+\end{center}
+
 (Фиг 21)
 
 Солнце S сообщает ускорения:
@@ -53,10 +75,17 @@ w2' = w2 * f/f2  > > (.)L
 W'2 = w2 * f/f1  > > (.)S
 w2" = w2 * f2/p2 > > L(.)
 
+\begin{center}
+    \includegraphics{22.png}
+\end{center}
 Фиг. 22.
 
 Получим для ускорений точки (.) слагающие
 W1 = w'2 + w'2 = f * (S+T+L)/T+L [ X * f/f3 + L]
 
+\begin{center}
+    \includegraphics{23.png}
+\end{center}
+Фиг. 23.
 
 \end{document}
