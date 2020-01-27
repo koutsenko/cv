@@ -13,6 +13,7 @@
 \usepackage{textcomp}
 \usepackage{upgreek}
 \usepackage[figurename=Фиг.]{caption}
+\usepackage{wrapfig}
 \graphicspath{{images/}}                                   
 \newcommand{\hdotsfive}{. . . . .}
 %Preamble
@@ -53,11 +54,11 @@
 
 Составим теперь выражения ускорений, которые эти тела сообщают друг другу.
 
-\begin{center}
-    \includegraphics{21.png}
+\begin{wrapfigure}{i}{0.5\linewidth}
+    \includegraphics[scale=0.6]{21.png}
     \captionof{figure}{}
-    \label{fig1}
-\end{center}
+\end{wrapfigure}
+\label{fig1}
 
 Солнце S сообщает ускорения:
 \begin{equation*}
@@ -66,8 +67,9 @@
         \text{Луне: }  & f\cdot\frac{\textit{S}}{\uprho_2^2}\text{\space\space\guillemotright\space\guillemotright} & \textit{LS}
     \end{aligned}
 \end{equation*}
-
 \noindentвследствие чего точка $\Theta$ имеет ускорения:
+\\ $ $ \\
+
 \begin{equation*}
     \begin{aligned}
         \frac{T}{T+L} \cdot f \cdot \frac{S}{\uprho_1^2} & \text{по направлению, параллельному}                                         & \textit{TS} \\
