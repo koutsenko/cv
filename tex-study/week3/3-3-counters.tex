@@ -1,0 +1,131 @@
+% Документ создан на базе шаблона из курса https://www.coursera.org/learn/latex
+
+\documentclass[a4paper,12pt]{article}                       % (обязательно) начало файла
+
+\usepackage{cmap}					                        % поиск в PDF
+\usepackage[T2A]{fontenc}			                        % кодировка
+\usepackage[utf8]{inputenc}			                        % кодировка исходного текста
+\usepackage[english,russian]{babel}	                        % локализация и переносы
+\usepackage{indentfirst}                                    % отступ первой строки (под)раздела / (sub)section
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools}      % AMS
+
+%%% Теоремы
+\theoremstyle{plain}                                        % стиль по-умолчанию, переопределять необязательно
+\newtheorem{theorem}{Теорема}[section]
+\newtheorem{proposition}[theorem]{Утверждение}
+
+\theoremstyle{definition}                                   % "Определение"
+\newtheorem{corollary}{Следствие}[theorem]
+\newtheorem{problem}{Задача}[section]
+
+\theoremstyle{remark}                                       % "Примечание"
+\newtheorem*{nonum}{Решение}
+
+\title{3-1 Объект "теорема"}
+\author{Koutsenko Dmitry}
+\date{\today}
+
+\begin{document}                                            % (обязательно) начало документа
+
+\maketitle
+
+\section{Теоремы}
+
+\begin{theorem}[Простое равенство]\label{theorem1}
+    $2+2=4$
+\end{theorem}
+
+Смотри теорему \ref{theorem1} на стр. \pageref{theorem1}
+
+\begin{proposition}
+    $3\times 3 = 9$
+\end{proposition}
+
+\begin{corollary}
+    9 / 3 = 3
+\end{corollary}
+
+\begin{nonum}
+    Всё что угодно.
+\end{nonum}
+
+
+\section{Новые команды}
+
+\newcommand{\nw}{\ensuremath{\succcurlyeq}}
+
+\begin{equation}\label{pref}
+    x \nw y
+\end{equation}
+
+Предпочтение \nw\ является полным.
+
+\newcommand{\str}[1]{%
+    на стр. \pageref{#1}%
+}
+
+См. уравнение \eqref{pref} \str{pref}.
+
+\newcommand{\qwerty}[2][X]{%
+    \begin{equation}
+        #1 \nw #2
+    \end{equation}
+}
+
+\qwerty{Y}
+
+$x \ge y$
+
+\renewcommand{\ge}{\geqslant}
+
+$x \ge y$
+
+\section{Счетчики}
+
+\newcounter{nc}[section]
+
+\arabic{nc}
+
+\setcounter{nc}{10}
+
+\arabic{nc}
+
+\roman{nc}
+
+\Roman{nc}
+
+\setcounter{nc}{532}
+
+\Roman{nc}
+
+\setcounter{nc}{5}
+
+\alph{nc}
+
+\asbuk{nc}
+
+\Asbuk{nc}
+
+\roman{section}
+
+\arabic{section}
+
+\renewcommand{\thesection}{\Asbuk{section}}
+
+\section{Тест}
+
+\setcounter{section}{0}
+
+\section{Тест}
+
+\newcommand{\z}[1]{%
+
+\addtocounter{nc}{1}
+Задача \thesection.\arabic{nc}.#1%
+}
+
+\z{Текст задачи.}
+
+\z{Problem 2}
+
+\end{document}                                              % (обязательно) конец документа
