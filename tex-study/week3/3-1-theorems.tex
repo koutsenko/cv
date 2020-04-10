@@ -1,0 +1,52 @@
+% Документ создан на базе шаблона из курса https://www.coursera.org/learn/latex
+
+\documentclass[a4paper,12pt]{article}                       % (обязательно) начало файла
+
+\usepackage{cmap}					                        % поиск в PDF
+\usepackage[T2A]{fontenc}			                        % кодировка
+\usepackage[utf8]{inputenc}			                        % кодировка исходного текста
+\usepackage[english,russian]{babel}	                        % локализация и переносы
+\usepackage{indentfirst}                                    % отступ первой строки (под)раздела / (sub)section
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools}      % AMS
+
+%%% Теоремы
+\theoremstyle{plain}                                        % стиль по-умолчанию, переопределять необязательно
+\newtheorem{theorem}{Теорема}[section]
+\newtheorem{proposition}[theorem]{Утверждение}
+
+\theoremstyle{definition}                                   % "Определение"
+\newtheorem{corollary}{Следствие}[theorem]
+\newtheorem{problem}{Задача}[section]
+
+\theoremstyle{remark}                                       % "Примечание"
+\newtheorem*{nonum}{Решение}
+
+\title{3-1 Объект "теорема"}
+\author{Koutsenko Dmitry}
+\date{\today}
+
+\begin{document}                                            % (обязательно) начало документа
+
+\maketitle
+
+\section{Теоремы}
+
+\begin{theorem}[Простое равенство]\label{theorem1}
+    $2+2=4$
+\end{theorem}
+
+Смотри теорему \ref{theorem1} на стр. \pageref{theorem1}
+
+\begin{proposition}
+    $3\times 3 = 9$
+\end{proposition}
+
+\begin{corollary}
+    9 / 3 = 3
+\end{corollary}
+
+\begin{nonum}
+    Всё что угодно.
+\end{nonum}
+
+\end{document}                                              % (обязательно) конец документа
