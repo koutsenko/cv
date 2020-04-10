@@ -49,4 +49,35 @@
     Всё что угодно.
 \end{nonum}
 
+
+\section{Новые команды}
+
+\newcommand{\nw}{\ensuremath{\succcurlyeq}}
+
+\begin{equation}\label{pref}
+    x \nw y
+\end{equation}
+
+Предпочтение \nw\ является полным.
+
+\newcommand{\str}[1]{%
+    на стр. \pageref{#1}%
+}
+
+См. уравнение \eqref{pref} \str{pref}.
+
+\newcommand{\qwerty}[2][X]{%
+    \begin{equation}
+        #1 \nw #2
+    \end{equation}
+}
+
+\qwerty{Y}
+
+$x \ge y$
+
+\renewcommand{\ge}{\geqslant}
+
+$x \ge y$
+
 \end{document}                                              % (обязательно) конец документа
