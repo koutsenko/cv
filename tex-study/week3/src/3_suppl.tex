@@ -1,0 +1,66 @@
+\documentclass[a4paper,12pt]{article}
+
+%%% Работа с русским языком
+\usepackage{cmap}					% поиск в PDF
+\usepackage{mathtext} 				% русские буквы в формулах
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+
+\usepackage{soulutf8} % Модификаторы начертания
+
+\author{\LaTeX{} в Вышке}
+\title{Неделя 3. Варианты отображения счетчиков и форматы текста}
+\date{\today}
+
+\begin{document} % конец преамбулы, начало документа
+
+\maketitle
+
+\section{Отображение счетчиков}
+
+\newcounter{nc}
+\setcounter{nc}{4}
+
+Счетчик установлен на значении 4
+
+    \begin{tabular}{|cc|}
+      \hline Команда & Представление \\ \hline
+      \verb|\arabic|  & \arabic{nc} \\ \hline
+      \verb|\roman|  & \roman{nc} \\ \hline
+      \verb|\Roman|  & \Roman{nc} \\ \hline
+      \verb|\alph|  & \alph{nc} \\ \hline
+      \verb|\Alph|  & \Alph{nc} \\ \hline
+      \verb|\asbuk|  & \asbuk{nc} \\ \hline
+      \verb|\Asbuk|  & \Asbuk{nc} \\ \hline
+      \verb|\fnsymbol|  & \fnsymbol{nc} \\ \hline
+    \end{tabular}
+
+\newpage
+
+\section{Форматы текста}
+
+Некоторые из форматов требуют подключения пакета soulutf8.
+
+    \begin{tabular}{|cc|}
+      \hline Команда & Представление \\ \hline
+      \verb|\textmd|  & \textmd{Слово | Word} \\ 
+      \verb|\textsc|  & \textsc{Слово | Word} \\ 
+      \verb|\textup|  & \textup{Слово | Word} \\ 
+      \verb|\textit|  & \textit{Слово | Word} \\ 
+      \verb|\textsc|  & \textsc{Слово | Word} \\ 
+      \verb|\textsl|  & \textsl{Слово | Word} \\ 
+      \verb|\textrm|  & \textrm{Слово | Word} \\ 
+      \verb|\textsf|  & \textsf{Слово | Word} \\ 
+      \verb|\texttt|  & \texttt{Слово | Word} \\ 
+      \verb|\textbf|  & \textbf{Слово | Word} \\ 
+      \verb|\underline|  & \underline{Слово | Word} \\ 
+      \verb|\textbf\textit|  & \textbf{\textit{Слово | Word}} \\ 
+      \verb|\caps|  & \caps{Слово | Word} \\
+      \verb|\so|  & \so{Слово | Word} \\
+      \verb|\st|  & \st{Слово | Word} \\  \hline
+    \end{tabular}
+
+
+\end{document} % конец документа
+
