@@ -1,0 +1,182 @@
+% \documentclass[a4paper,14pt,twocolumn]{article}       % (обязательно) начало файла
+\documentclass[a4paper,14pt]{article}       % (обязательно) начало файла
+
+\usepackage{multicol}                       % многоколоночный режим в фрагменте документа
+\usepackage{cmap}					        % поиск в PDF
+\usepackage[T2A]{fontenc}			        % кодировка
+\usepackage[utf8]{inputenc}			        % кодировка исходного текста
+\usepackage[english,russian]{babel}	        % локализация и переносы
+\usepackage{indentfirst}                    % отступ первой строки (под)раздела / (sub)section
+\usepackage{extsizes}                       % поддержка любых размеров шрифта
+\usepackage{geometry}                       % отступы от края экрана
+    \geometry{top=25mm}
+    \geometry{bottom=35mm}
+    \geometry{left=35mm}
+    \geometry{right=25mm}
+\usepackage{fancyhdr}                       % колонтитулы документа
+    \pagestyle{fancy}                       % включать или нет колонтитул
+    \renewcommand{\headrulewidth}{0mm}      % скрыть разделитель верхнего колонтитула
+    \lfoot{Нижний левый}
+    \rfoot{Нижний правый}
+    \lhead{Верхний левый}
+    \rhead{Верхний правый}
+\usepackage{setspace}                       % межстрочное расстояние
+    % \onehalfspacing                         % 1.5
+    % \doublespacing                          % 2
+    \singlespacing                          % 1
+\usepackage{lastpage}                       % для счетчика страниц \pageref{LastPage}
+\usepackage{soul}                           % модификации начертания символов
+\usepackage{hyperref}                       % гиперссылки и свойства PDF документа
+\hypersetup{
+    unicode=true,                           % русские буквы в разделе PDF
+    pdftitle={Заголовок},                   % заголовок
+    pdfauthor={Автор},                      % автор
+    pdfsubject={Тема},                      % тема
+    pdfcreator={Создатель},                 % создатель
+    pdfproducer={Производитель},            % производитель
+    pdfkeywords={keyword1}{key2}{key3},     % ключевые слова
+    colorlinks=true,                        % false: ссылки в рамках, true: цветные ссылки
+    linkcolor=red,                          % внутренние ссылки
+    citecolor=green,                        % на библиографию
+    filecolor=magenta,                      % на файлы
+    urlcolor=cyan                           % на URL
+}
+\renewcommand{\familydefault}{\sfdefault}   % начертание шрифта - без засечек
+\usepackage{multicol}                       % несколько колонок
+
+\begin{document}
+
+Проверка
+
+% soul package demo.
+\so{letterspacing}
+\caps{CAPITALS, Small Capitals}
+\ul{underlining}
+\st{overstriking}
+\hl{highlighting}
+
+\newpage
+\pagestyle{empty}                           % выключили колонтитул для этой страницы
+
+Новая страница
+
+
+\section{Кегль}
+
+\begin{table}[h!]
+    \caption{Размеры шрифта}
+    \centering 
+    \begin{tabular}{|c|c|}
+    \hline  \verb|\tiny|            & \tiny             крошечный           \\
+    \hline  \verb|\scriptsize|      & \scriptsize       очень маленький     \\
+    \hline  \verb|\footnotesize|    & \footnotesize     довольно маленький  \\
+    \hline  \verb|\small|           & \small            маленький           \\
+    \hline  \verb|\normalsize|      & \normalsize       нормальный          \\ % Размер указан в documentclass
+    \hline  \verb|\large|           & \large            большой             \\ % +5pt
+    \hline  \verb|\Large|           & \Large            еще больше          \\ % +5pt
+    \hline  \verb|\LARGE|           & \LARGE            очень большой       \\ % ...
+    \hline  \verb|\huge|            & \huge             огромный            \\
+    \hline  \verb|\Huge|            & \Huge             громадный           \\
+    \hline
+    \end{tabular}
+\end{table}
+
+Способ 1 - какой-нибудь \Large обычный \normalsize текст.
+
+\begin{small}
+    Способ 2 - какой-нибудь обычный текст.
+\end{small}
+
+Способ 3 - какой-{\Large нибудь} обычный текст.
+
+\textbf{Какой-{\Large нибудь} \textit{обычный} текст.}
+
+Еще \emph{очень \emph{хороший} очень} текст
+
+Еще \emph{очень \textit{хороший} очень} текст
+
+\newpage
+
+Счетчик последней страницы \pageref{LastPage}
+
+                                            % начертание шрифта - вернем засечки
+\renewcommand{\familydefault}{cmtt}\normalfont 
+                                            
+
+\section{Титульный лист}
+\newpage
+\thispagestyle{empty}                       % выключили колонтитул именно для этой страницы
+
+\begin{center}
+    \textit{Федеральное государственное автономное учреждение \\
+    высшего профессионального образования}
+    \vspace{0.5ex}
+
+    \textbf{НАЦИОНАЛЬНЫЙ ИССЛЕДОВАТЕЛЬСКИЙ УНИВЕРСИТЕТ \\ "ВЫСШАЯ ШКОЛА ЭКОНОМИКИ"}
+\end{center}
+
+\begin{flushright}
+    \noindent
+    \textit{Фамилия Имя Отчество}
+    \\
+    \textit{студент факультета экономики \\(группа 211И)}
+\end{flushright}
+
+\begin{center}
+    \vspace{13ex}
+    \textbf{Р\,Е\,Ф\,E\,Р\,А\,T}
+    \vspace{1ex}
+
+    по какой-то дисциплине
+
+    на тему
+
+    \textbf{\textit{<<Заголовок>>}}
+    \vfill                                  % пробелы до конца нижнего края
+    Москва 2014
+\end{center}
+
+\newpage
+
+\section{Гиперссылки}
+
+\url{http://hse.ru}
+
+\href{http://hse.ru}{Сайт} ВШЭ
+
+\section{Перечни}
+
+\begin{enumerate}
+    \item Первый пункт
+    \item Второй пункт
+    \begin{itemize}
+        \item Вложенный список
+        \item Вложенный список
+    \end{itemize}
+    \item Третий пункт
+\end{enumerate}
+
+Еще один список
+\begin{itemize}
+    \item[*] Итем 1
+    \item[*] Итем 2
+\end{itemize}
+
+\section{Набор текста в несколько колонок}
+
+\begin{enumerate}
+    \begin{multicols}{3}
+        \item $(1+x_1)(1+x_2)^2$;
+        \item $\sqrt{x_1}$;
+        \item $x_1+2x_2-10$;
+        \item $(0{,}5x_1+x_2)^2$;
+        \item $x_2$;
+        \item $\sqrt{x_1}+\sqrt{2x_2}$;
+        \item $\ln(1+x_1)+2\ln(1+x_2)$;
+        \item $5x_1$;
+        \item $10-x_1+2x_2$;
+    \end{multicols}
+\end{enumerate}
+
+\end{document}
+
