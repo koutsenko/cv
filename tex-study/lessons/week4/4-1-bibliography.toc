@@ -1,0 +1,4 @@
+\babel@toc {russian}{}
+\contentsline {section}{\numberline {1}Простая библиография}{1}{section.1}%
+\contentsline {section}{\numberline {2}Пакет cite}{1}{section.2}%
+\contentsline {section}{Список источников}{1}{section*.2}%
