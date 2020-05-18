@@ -2,6 +2,11 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+% Переопределяем нумерацию по-русски для 2-го уровня списков %
+% Уровень задается количеством символов "i" после enum %
+\renewcommand{\theenumii}{\asbuk{enumii}}
 
 \begin{document}
 
