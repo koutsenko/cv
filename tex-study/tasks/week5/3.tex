@@ -3,17 +3,18 @@
 \usepackage{multicol}
 \usepackage[utf8]{inputenc}
 \usepackage[T2A]{fontenc}
+\usepackage{graphicx}
 
 
 \begin{document}
 
 \begin{enumerate}
     \begin{multicols}{2}
-        \item Картинка1
-        \item Картинка2
-        \item Картинка3
-        \item Картинка4
-        \item Картинка5
+        \item \includegraphics{filename.pdf}
+        \item \includegraphics[scale=2.5]{filename.pdf}
+        \item \includegraphics[height=3in,keepaspectratio]{filename.pdf}
+        \item \includegraphics[height=30mm,width=26mm]{filename.pdf}
+        \item \includegraphics[height=0.2\paperheight]{filename.pdf}
     \end{multicols}
 \end{enumerate}
 
