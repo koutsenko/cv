@@ -1,10 +1,11 @@
 __latexindent_temp.tex
 *.aux
+*.aux.swp
 *.fdb_latexmk
 *.fls
 *.log
-*.synctex.gz
 *.lof
 *.lot
+*.synctex.gz
+*.toc
 *.out
-*.aux.swp
