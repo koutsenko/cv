@@ -8,13 +8,19 @@
 \usepackage{geometry}       % Простой способ задавать поля
 \usepackage{setspace}       % Возможность задать межстрочный интервал
 \usepackage{indentfirst}    % Авторасстановка красных строк
+\usepackage{hyperref}       % Ссылки в PDF
 
 \geometry{top=30mm}
 \geometry{bottom=40mm}
 \geometry{left=30mm}
 \geometry{right=20mm}
 \onehalfspacing
-
+\hypersetup{
+    unicode=true,           % Русские буквы в разделе PDF
+    colorlinks=true,        % False: ссылки в рамках, true: цветные ссылки
+    linkcolor=black,        % Внутренние ссылки
+    urlcolor=blue           % На URL
+}
 
 \begin{document}
 
