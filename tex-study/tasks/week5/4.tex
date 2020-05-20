@@ -9,6 +9,11 @@
 \usepackage{setspace}       % Возможность задать межстрочный интервал
 \usepackage{indentfirst}    % Авторасстановка красных строк
 \usepackage{hyperref}       % Ссылки в PDF
+\usepackage[backend=bibtex,style=apa]{biblatex}
+
+% sudo apt-get install texlive-bibtex-extra biber
+
+\bibliography{4}
 
 \geometry{top=30mm}
 \geometry{bottom=40mm}
@@ -100,6 +105,9 @@ from \href{https://ru.wikipedia.org/?oldid=75221213}{https://ru.wikipedia.org/?o
  \item[\textcolor{blue}{\textbullet}]{\textit{«Белый плен»}, художественный фильм 2006 г., США}
  \item[\textcolor{blue}{\textbullet}]{\textit{«Белая мгла»}, художественный фильм 2009 г., США}
 \end{itemize}
+
+\printbibliography
+
 
 \section{Литература}
 Kruesi, L. (2009). Aurorae are not mirror images. Astronomy, 37 (11).
