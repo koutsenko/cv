@@ -30,15 +30,16 @@
 
 \begin{document}
 
+\newcommand{\stoptocwriting}{\addtocontents{toc}{\protect\setcounter{tocdepth}{-5}}}
+\newcommand{\resumetocwriting}{\addtocontents{toc}{\protect\setcounter{tocdepth}{\arabic{tocdepth}}}}
+
 \setcounter{secnumdepth}{0} % Выключить нумерацию разделов и подразделов 
 
-\setcounter{tocdepth}{0}    % Выключить toc для текущего фрагмента
-
-\subsection{Полярное сияние}
+\stoptocwriting
+\section{Полярное сияние}
+\resumetocwriting
 \textbf{Полярное сияние (северное сияние)} — свечение (\href{\lumURL}{люминесценция}) верхних слоёв \href{\atmURL}{атмосфер планет}, 
 обладающих \href{\magURL}{магнитосферой}, вследствие их взаимодействия с заряженными частицами \href{\sovURL}{солнечного ветра}.
-
-\setcounter{tocdepth}{3}    % Включить обратно toc после текущего фрагмента
 
 \tableofcontents
 
