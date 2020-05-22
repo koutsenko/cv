@@ -9,7 +9,8 @@
 \usepackage{setspace}       % Возможность задать межстрочный интервал
 \usepackage{indentfirst}    % Авторасстановка красных строк
 \usepackage{hyperref}       % Ссылки в PDF
-\usepackage[backend=bibtex,style=apa]{biblatex}
+\usepackage[backend=biber,bibencoding=utf8,maxcitenames=2,style=apa]{biblatex}
+\addbibresource{4.bib}
 
 % sudo apt-get install texlive-bibtex-extra biber
 
@@ -106,17 +107,10 @@ from \href{https://ru.wikipedia.org/?oldid=75221213}{https://ru.wikipedia.org/?o
  \item[\textcolor{blue}{\textbullet}]{\textit{«Белая мгла»}, художественный фильм 2009 г., США}
 \end{itemize}
 
-\printbibliography
+\nocite{*}
 
+\printbibliography[title=Литература]
 
-\section{Литература}
-Kruesi, L. (2009). Aurorae are not mirror images. Astronomy, 37 (11).
-Александров, Н. Л. (2001). Полярные сияния. Соросовский образовательный журнал, 7 (5).
-Булат, В. Л. (1974). Оптические явления в природе. Просвещение.
-Зверева, С. В. (1988). В мире солнечного света. Гидрометеоиздат.
-Исаев, С. И. (1980). Полярные сияния. Книж. изд-во.
-Мизун, Ю. Г. (1983). Полярные сияния. Наука.
-Мишин, Р. et al. (1989). Взаимодействие электронных потоков с ионосферной плазмой. Гидрометеоиздат.
 
 \end{document}
 
