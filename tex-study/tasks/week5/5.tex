@@ -11,7 +11,15 @@
 \begin{document}
 
 \begin{tikzpicture}
-    \begin{axis}[date coordinates in = x,ymin=32.5, ymax=54, ytick={35,40,45,50}, width=15cm,height=15cm]
+    \begin{axis}[
+        date coordinates in = x,
+        ymin=32.5, 
+        ymax=54, 
+        ytick={35,40,45,50}, 
+        x tick label style={rotate=90},
+        width=15cm,
+        height=15cm
+    ]
         \addplot [red] table[x index=0,y index=1,col sep=comma] {oil_prices.csv};
         \addplot [blue] table[x index=0,y index=2,col sep=comma] {oil_prices.csv};
     \end{axis}
