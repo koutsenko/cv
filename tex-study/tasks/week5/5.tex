@@ -10,21 +10,24 @@
 
 \begin{document}
 
+\center{Динамика цен на нефть, USD/баррель}
+
 \begin{tikzpicture}
     \begin{axis}[
-        date coordinates in = x,
-        ymin=32.5, 
-        ymax=54, 
-        ytick={35,40,45,50}, 
-        xmin={2015-10-01},
-        xmax={2015-12-31},
-        xtick={2015-10-01,2015-10-15,2015-11-01,2015-11-15,2015-12-01,2015-12-15,2015-12-31},
-        x tick label style={rotate=90},
-        width=15cm,
-        height=15cm
-    ]
-        \addplot [red] table[x index=0,y index=1,col sep=comma] {oil_prices.csv};
+            date coordinates in = x,
+            ymin=32.5,
+            ymax=54,
+            ytick={35,40,45,50},
+            xmin={2015-10-01},
+            xmax={2015-12-31},
+            xtick={2015-10-01,2015-10-15,2015-11-01,2015-11-15,2015-12-01,2015-12-15,2015-12-31},
+            x tick label style={rotate=90},
+            width=15cm,
+            height=15cm
+        ]
         \addplot [blue] table[x index=0,y index=2,col sep=comma] {oil_prices.csv};
+        \addplot [red] table[x index=0,y index=1,col sep=comma] {oil_prices.csv};
+        \legend{Нефть Brent,Нефть WTI};
     \end{axis}
 \end{tikzpicture}
 
