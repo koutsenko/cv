@@ -6,6 +6,8 @@ __latexindent_temp.tex
 *.log
 *.lof
 *.lot
+*.nav
 *.synctex.gz
+*.snm
 *.toc
 *.out
