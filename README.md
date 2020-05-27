@@ -5,5 +5,5 @@ $ pdflatex ./cv.tex
 ```
 Могут понадобиться шрифты:<br />
 ```
-# apt install textlive-fonts-extra
+# apt install texlive-fonts-extra
 ``` 
