@@ -1,4 +1,4 @@
-## Резюме в формате LaTeX.<br />
+## Резюме в формате LaTeX
 Для генерации PDF:
 ```
 $ pdflatex ./cv.tex
@@ -7,3 +7,6 @@ $ pdflatex ./cv.tex
 ```
 # apt install texlive-fonts-extra
 ``` 
+
+## TODO
+GitHub Actions, чтобы сам PDF собирал.
