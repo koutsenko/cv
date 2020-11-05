@@ -1,3 +1,8 @@
+## Prerequisites
+
+Нужен дистрибутив TeX:
+* Для ОС Windows - TeX Live
+
 ## Резюме в формате LaTeX
 Для генерации PDF:
 ```
