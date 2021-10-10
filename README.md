@@ -7,6 +7,7 @@
 Для генерации PDF:
 ```
 $ pdflatex ./cv-ru.tex
+$ pdflatex ./cv-en.tex
 ```
 Могут понадобиться шрифты:<br />
 ```
