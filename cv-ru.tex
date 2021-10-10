@@ -245,12 +245,12 @@
 \newcommand{\cvevent}[5]
 {
 \vspace{8pt}
-	\begin{tabular*}{1\textwidth}{p{2.3cm}  p{4.8cm} x{9.9cm}}
- 		\textcolor{bgcol}{#1}& \textbf{#2} & \vspace{2.5pt}\textcolor{sectcol}{#3}
+	\begin{tabular*}{1\textwidth}{p{2.75cm}  p{5.25cm} x{9.0cm}}
+ 		\textcolor{bgcol}{#1}& \textbf{#2} & \vspace{12pt}\textcolor{sectcol}{#3}
 	\end{tabular*}
-\vspace{-12pt}
+\vspace{-17pt}
 \textcolor{softcol}{\hrule}
-\vspace{6pt}
+\vspace{4pt}
 	\begin{tabular*}{1\textwidth}{p{2.3cm} p{14.4cm}}
 &		 \larrow{bgcol}  #4\\[3pt]
 &		 \larrow{bgcol}  #5\\[6pt]
@@ -305,7 +305,7 @@
 %}}
 
 % use this for single words, e.g. CV or RESUME etc.
-\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\HUGE{\textcolor{white}{\textsc{Куценко Дмитрий}} } \textcolor{sectcol}{\rule[-1mm]{1mm}{0.9cm}} \HUGE{\textcolor{white}{\textsc{Резюме}} } }}
+\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\LARGE{\textcolor{white}{\textsc{Куценко Дмитрий}} } \textcolor{sectcol}{\rule[-1mm]{1mm}{0.6cm}} \LARGE{\textcolor{white}{\textsc{Резюме}} } }}
 
 
 %----------------------------------------------------------------------------------------
@@ -331,14 +331,12 @@
 %	META SECTION
 %----------------------------------------------------------------------------------------
 
-\vspace{-114pt}
+\vspace{-120pt}
 
 \metasection{Позиция:}{Фронтенд-разработчик}
 \metasection{Навыки:}{Проектирование, разработка, тестирование}
-\metasection{Знания:}{Javascript, React.js, Vanilla.js, Webpack, Git, Docker, Python, Django}
-\metasection{{Хобби}:}{Linux, Sci-Fi сериалы, Dungeons and Dragons, путешествия}
-
-\vspace{6pt}
+\metasection{Знания:}{JavaScript/TypeScript, React.js, Webpack, Git, Docker, Python, Django}
+\metasection{{Хобби}:}{Linux, Blockchain, Sci-Fi сериалы, готовка, путешествия}
 
 %---------------------------------------------------------------------------------------
 %	SUMMARAY (optional)
@@ -359,44 +357,51 @@
 %	EXPERIENCE
 %----------------------------------------------------------------------------------------
 \cvsection{Опыт работы}
+\vspace{-10pt}
 
-\cvevent{2017 - наст. вр.}
+\cvevent{09.2020 - 10.2021}
+{Фронтенд-разработчик}
+{Сбербанк}
+{Разработка UI ЛК для юр.лиц, модуль банковского сопровождения}
+{TypeScript, React. Поддержка легаси (СББОЛ), целевая разработка (ЕФС БС)}
+
+\cvevent{12.2017 - 09.2020}
 {Фронтенд-разработчик}
 {FireOffer.Ru}
 {Разработка SPA для работы с коммерческими предложениями}
 {React.js MPA, WYSIWYG конструктор, генерация PDF, интеграция с amoCRM и Битрикс24}
 
-\cvevent{2019}
+\cvevent{03.2019 - 08.2019}
 {Веб-разработчик}
 {НИУ ВШЭ}
 {Разработка этапа международной олимпиады по экономике (IEO 2019)}
 {Симулятор трейдера - NodeJS, Google Docs API, Websockets, React.js}
 
-\cvevent{2013 - 2014}
+\cvevent{02.2013 - 06.2014}
 {Фронтенд-разработчик}
 {Гарант-Сервис Университет}
 {Разработка SPA для новой версии справочно-правовой системы Гарант}
 {Главная страница и страницы поиска (ExtJS). Верстка для печати. Unit-тесты Siesta}
 
-\cvevent{2012}
+\cvevent{11.2012 - 01.2013}
 {Веб-разработчик}
 {СТ-Премиум}
 {Сопровождение медицинского портала doctorinfo.ru}
 {Верстка, ведение и пересчет рейтинга медучреждений (CodeIgniter, HTML5, jQuery)}
 
-\cvevent{2012}
+\cvevent{05.2012 - 10.2012}
 {Веб-разработчик}
 {min2win.ru}
 {Сопровождение игрового портала min2win.ru}
 {Верстка, вход через соц. сети, оптимизация времени отклика (PHP, MySQL)}
 
-\cvevent{2009-2011}
+\cvevent{12.2009 - 05.2011}
 {Системный администратор}
 {ГУ МОНИКИ им. М.Ф. Владимирского}
 {Сопровождение IT-инфраструктуры предприятия (ЛВС 500+ ПК)}
 {Разворачивание домена ActiveDirectory, раздач обновлений WSUS и антивирусной сети}
 
-\cvevent{2003-2009}
+\cvevent{06.2003 - 01.2009}
 {Инженер-программист}
 {ФГУП НИИАА им. акад. В.С. Семенихина}
 {Разработка внутренних программных комплексов}
@@ -406,6 +411,7 @@
 %	EDUCATION SECTION
 %--------------------------------------------------------------------------------------
 \cvsection{Образование}
+\vspace{-10pt}
 
 \cvevent{2016 - наст. вр.}
 {Митапы/конференции}
@@ -431,7 +437,7 @@
 
 \null
 \vspace*{\fill}
-\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\mystrut \small \textcolor{white}{last update: 05/2020}}}
+\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\mystrut \small \textcolor{white}{last update: 10/2021}}}
 
 %============================================================================%
 %
