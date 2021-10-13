@@ -84,7 +84,7 @@
 \usepackage[a4paper]{geometry}		
 
 % for example, change the margins to 2 inches all round
-\geometry{top=1.75cm, bottom=-.6cm, left=.9cm, right=.9cm} 	
+\geometry{top=1.75cm, bottom=-.6cm, left=1.5cm, right=1.5cm} 	
 
 %use customized header
 \usepackage{fancyhdr}				
@@ -245,10 +245,10 @@
 \newcommand{\cvevent}[5]
 {
 \vspace{8pt}
-	\begin{tabular*}{1\textwidth}{p{2.75cm}  p{4.5cm} x{11.0cm}}
- 		\textcolor{bgcol}{#1}& \textbf{#2} & \vspace{12pt}\textcolor{sectcol}{#3}
+	\begin{tabular*}{1\textwidth}{p{2.75cm} p{5cm} p{12cm}}
+		\textcolor{bgcol}{#1} & \textbf{\textcolor{bgcol}{#2}} & \textbf{#3}
 	\end{tabular*}
-\vspace{-17pt}
+\vspace{-4pt}
 \textcolor{softcol}{\hrule}
 \vspace{4pt}
 	\begin{tabular*}{1\textwidth}{p{2.3cm} p{14.4cm}}
@@ -305,7 +305,7 @@
 %}}
 
 % use this for single words, e.g. CV or RESUME etc.
-\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\LARGE{\textcolor{white}{\textsc{Dmitry Kutsenko}} } \textcolor{sectcol}{\rule[-1mm]{1mm}{0.6cm}} \LARGE{\textcolor{white}{\textsc{Curriculum Vitae}} } }}
+\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\Huge{\textcolor{white}{\textsc{Dmitry Kutsenko}}}}}
 
 
 %----------------------------------------------------------------------------------------
@@ -356,10 +356,10 @@
 %---------------------------------------------------------------------------------------
 %	EXPERIENCE
 %----------------------------------------------------------------------------------------
+\vspace{18pt}
 \cvsection{Work experience}
-\vspace{-10pt}
 
-\cvevent{09.2020 - 10.2021}
+\cvevent{09.2020 - current}
 {Frontend developer}
 {PJSC Sberbank}
 {Development of an UI for a personal account for legal entities, a banking support module}
@@ -387,31 +387,31 @@
 {Web developer}
 {LTD ST-Premium}
 {Medical rating portal support doctorinfo.ru}
-{Layout, manage and calculation of  (CodeIgniter, HTML5, jQuery)}
+{Page layout. Manage and calculation rating of clinics (CodeIgniter, HTML5, jQuery)}
 
-\cvevent{05.2012 - 10.2012}
-{Web developer}
-{min2win.ru game portal}
-{Game portal support and content management}
-{Layout, authorization via social networks, response time optimization (PHP, MySQL)}
+% \cvevent{05.2012 - 10.2012}
+% {Web developer}
+% {min2win.ru game portal}
+% {Game portal support and content management}
+% {Layout, authorization via social networks, response time optimization (PHP, MySQL)}
 
-\cvevent{12.2009 - 05.2011}
-{System administrator}
-{Moscow Regional Research Clinical Institute. M. F. Vladimirsky}
-{Maintenance of the IT infrastructure of the enterprise (LAN of approx. 500 hosts)}
-{ActiveDirectory domain deployment, WSUS and antivirus network remote setup (GPO)}
+% \cvevent{12.2009 - 05.2011}
+% {System administrator}
+% {Moscow Regional Research Clinical Institute. M. F. Vladimirsky}
+% {Maintenance of the IT infrastructure of the enterprise (LAN of approx. 500 hosts)}
+% {ActiveDirectory domain deployment, WSUS and antivirus network remote setup (GPO)}
 
-\cvevent{06.2003 - 01.2009}
-{Software engineer}
-{Scientific Research Institute of Automatic Equipment (JSC "NIIAA")}
-{Development of internal software systems}
-{Norm control (C++, MySQL) and Software for the planning and economic dept (Java, Oracle)}
+% \cvevent{06.2003 - 01.2009}
+% {Software engineer}
+% {Scientific Research Institute of Automatic Equipment (JSC "NIIAA")}
+% {Development of internal software systems}
+% {Norm control (C++, MySQL) and Software for the planning and economic dept (Java, Oracle)}
 
 %---------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %--------------------------------------------------------------------------------------
+\vspace{18pt}
 \cvsection{Education}
-\vspace{-10pt}
 
 \cvevent{2016 - current}
 {Meetups and conferences}
